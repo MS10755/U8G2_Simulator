@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{955ea0d1-d5fe-4a46-8253-e256e0a16f0d}</ProjectGuid>
+    <RootNamespace>LCDSimulator</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\SDL2\include;..\Virtual_Arduino\Frame\ArduinoAPI;..\Virtual_Arduino\Frame\LLA_Drivers\inc;..\Virtual_Arduino\Frame;..\Virtual_Arduino\libraries\U8g2\src;..\HAL\Screen;..\Virtual_Arduino\libraries\Juan_EventButton_Library;..\Virtual_Arduino\libraries\MillisTaskManager;..\Virtual_Arduino\Pages;$(IncludePath)</IncludePath>
+    <ReferencePath>..\SDL2\lib\x64;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;ARDUINO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\dtostrf.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\HardwareSerial.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\hooks.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\IPAddress.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\itoa.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\new.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Print.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\SPI.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Stream.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WInterrupts.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Wire.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WireBase.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_analog.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_digital.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_pulse.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_shift.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WMath.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WString.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\Frame.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_ADC.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_advanceIO.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_baseIO.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_errorCode.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_EXTI.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_flash.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_IOMaps.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_PWM.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SPI.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_clock.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_IRQ.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_rest.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_time.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_Template.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_timer.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_UART.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_USB.c" />
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_WDG.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\Juan_EventButton_Library\Juan_EventButton.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\MillisTaskManager\MillisTaskManager.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui_u8g2.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_bitmap.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_box.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_buffer.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_button.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_circle.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_cleardisplay.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_d_memory.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_d_setup.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_font.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_fonts.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_hvline.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_input_value.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_intersection.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_kerning.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_line.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_ll_hvline.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_message.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_polygon.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_selection_list.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_setup.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log_u8g2.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log_u8x8.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_8x8.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_byte.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_cad.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_capture.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_debounce.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_display.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_a2printer.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_hd44102.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_il3820_296x128.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ist3020.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ist7920.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ks0108.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_lc7981.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ld7032_60x32.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ls013b7dh03.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_max7219.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcd8544_84x48.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcf8812.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcf8814_hx1230.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_s1d15721.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_s1d15e06.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sbn1661.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sdl_128x64.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sed1330.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1106_64x32.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1106_72x40.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1107.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1108.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1122.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1305.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_128x32.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_128x64_noname.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_2040x16.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_48x64.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_64x32.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_64x48.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_72x40.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_96x16.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1309.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1316.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1317.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1318.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1320.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1322.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1325.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1326.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1327.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1329.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1606_172x72.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1607_200x200.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7511.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st75256.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7528.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st75320.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7565.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7567.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7571.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_erc240160.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_s028hn118a.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_ymc240160.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7588.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7920.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_t6963.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1601.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1604.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1608.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1609.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1610.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1611.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1617.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1638.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1701_dogs102.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1701_mini12864.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_fonts.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_gpio.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_input_value.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_message.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_sdl_key.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_selection_list.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_setup.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_string.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_u16toa.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_u8toa.c" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\U8g2lib.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\U8x8lib.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\manage.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_about.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_main.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_menu.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_settings.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_template.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_keybar.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_menu.cpp" />
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_setting.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui.h" />
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui_u8g2.h" />
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2.h" />
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8.h" />
+    <ClInclude Include="..\Virtual_Arduino\Pages\common.h" />
+    <ClInclude Include="..\Virtual_Arduino\Pages\manage.h" />
+    <ClInclude Include="..\Virtual_Arduino\Pages\unit_setting.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

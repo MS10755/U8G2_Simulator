@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="LLA_Drivers">
+      <UniqueIdentifier>{7fb0278f-a7e0-4d76-80c4-f5927c01855c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ArduinoAPI">
+      <UniqueIdentifier>{af13c85c-0ea9-4d9e-a611-c97654d4ae68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="U8G2">
+      <UniqueIdentifier>{daaa5e85-e3ea-4987-b3f1-1a2aafb81f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Juan_EventButton_Library">
+      <UniqueIdentifier>{4985a561-b4bc-4aec-8a97-2ae36481dd99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MillisTaskManager">
+      <UniqueIdentifier>{a11b6fd1-ba87-40f5-8fea-1c328f6cf624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages">
+      <UniqueIdentifier>{08b275e7-4ecf-48e8-a9ae-2fa2df3845e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_ADC.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_advanceIO.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_baseIO.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_errorCode.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_EXTI.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_flash.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_IOMaps.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_PWM.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SPI.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_clock.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_IRQ.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_rest.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_SYS_time.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_Template.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_timer.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_UART.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_USB.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\LLA_Drivers\src\LLA_WDG.c">
+      <Filter>LLA_Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\HardwareSerial.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\IPAddress.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\new.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Print.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\SPI.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Stream.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\Wire.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WireBase.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WMath.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WString.cpp">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\dtostrf.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\hooks.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\itoa.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\WInterrupts.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_analog.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_digital.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_pulse.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\ArduinoAPI\wiring_shift.c">
+      <Filter>ArduinoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Frame\Frame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui_u8g2.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_bitmap.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_box.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_buffer.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_button.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_circle.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_cleardisplay.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_d_memory.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_d_setup.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_font.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_fonts.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_hvline.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_input_value.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_intersection.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_kerning.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_line.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_ll_hvline.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_message.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_polygon.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_selection_list.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2_setup.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log_u8g2.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8log_u8x8.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_8x8.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_byte.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_cad.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_capture.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_a2printer.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_hd44102.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_il3820_296x128.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ist3020.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ist7920.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ks0108.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_lc7981.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ld7032_60x32.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ls013b7dh03.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_max7219.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcd8544_84x48.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcf8812.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_pcf8814_hx1230.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_s1d15e06.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_s1d15721.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sbn1661.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sed1330.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1106_64x32.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1106_72x40.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1107.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1108.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sh1122.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1305.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_48x64.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_64x32.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_64x48.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_72x40.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_96x16.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_128x32.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_128x64_noname.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1306_2040x16.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1309.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1316.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1317.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1318.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1320.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1322.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1325.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1326.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1327.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1329.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1606_172x72.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_ssd1607_200x200.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7511.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7528.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7565.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7567.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7571.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_erc240160.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_s028hn118a.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7586s_ymc240160.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7588.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st7920.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st75256.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_st75320.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_t6963.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1601.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1604.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1608.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1609.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1610.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1611.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1617.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1638.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1701_dogs102.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_uc1701_mini12864.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_debounce.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_display.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_fonts.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_gpio.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_input_value.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_message.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_selection_list.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_setup.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_string.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_u8toa.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_u16toa.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\U8g2lib.cpp">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\U8x8lib.cpp">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_d_sdl_128x64.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8_sdl_key.c">
+      <Filter>U8G2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\Juan_EventButton_Library\Juan_EventButton.c">
+      <Filter>Juan_EventButton_Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\libraries\MillisTaskManager\MillisTaskManager.cpp">
+      <Filter>MillisTaskManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_main.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\manage.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_menu.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_settings.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_about.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\page_template.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_keybar.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_menu.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Virtual_Arduino\Pages\unit_setting.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui.h">
+      <Filter>U8G2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\mui_u8g2.h">
+      <Filter>U8G2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8g2.h">
+      <Filter>U8G2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\libraries\U8g2\src\clib\u8x8.h">
+      <Filter>U8G2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\Pages\common.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\Pages\manage.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Virtual_Arduino\Pages\unit_setting.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
